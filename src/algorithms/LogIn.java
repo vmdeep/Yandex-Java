@@ -15,7 +15,12 @@ public class LogIn {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		System.out.println(isLoginOk("h........b"));
+
+	}
+	
+	public static Boolean isLoginOk(String login){
+		return login.matches("^[a-z,A-Z]++([a-z,A-Z,\\-,\\.]{0,18}?[\\d,\\w])$");
 
 	}
 
